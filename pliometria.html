@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pliometria: A Ciência da Potência - ANGESPORTE</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#FF6A00',
+            brandDark: '#E05E00',
+            surface: '#111111',
+            card: '#1A1A1A',
+            txt: '#F5F5F5',
+            muted: '#999999'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    * { box-sizing: border-box; }
+    .font-display { font-family: 'Oswald', sans-serif; }
+    .font-body { font-family: 'Barlow', sans-serif; }
+    .font-condensed { font-family: 'Barlow Condensed', sans-serif; }
+    
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(255,106,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,106,0,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    
+    .btn-cta {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .btn-cta::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      transition: left 0.5s ease;
+    }
+    .btn-cta:hover::after { left: 100%; }
+    
+    .card-hover { transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1); }
+    .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(255,106,0,0.15); }
+  </style>
+ </head>
+ <body class="h-full bg-surface text-txt font-body m-0 p-0">
+  <div class="w-full">
+    
+   <!-- Header / Hero Section -->
+   <section class="relative min-h-[700px] flex items-center justify-center pt-20 pb-16 overflow-hidden grid-bg">
+    <div class="absolute top-10 right-10 w-64 h-64 rounded-full bg-brand/5 blur-3xl"></div>
+    <div class="absolute bottom-10 left-10 w-48 h-48 rounded-full bg-brand/3 blur-2xl"></div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+     <div class="inline-flex items-center gap-2 bg-brand/10 border border-brand/20 rounded-full px-4 py-1.5 mb-6">
+         <span class="w-2 h-2 rounded-full bg-brand animate-pulse"></span> 
+         <span class="font-condensed text-xs tracking-widest text-brand uppercase">Método | Ciência | Resultados</span>
+     </div>
+     <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-white">
+        PLIOMETRIA:<br><span class="text-brand">A CIÊNCIA DA POTÊNCIA</span>
+     </h1>
+     <p class="text-base sm:text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed mt-6">
+        Do Ciclo de Estiramento-Encurtamento à Performance de Elite. O movimento eficiente não é fruto do acaso; é a aplicação precisa da ciência aplicada ao corpo humano.
+     </p>
+     
+     <div class="mt-10 flex flex-col items-center justify-center gap-4">
+         <a href="#checkout" class="btn-cta bg-brand hover:bg-brandDark text-white font-display text-xl tracking-wider px-10 py-5 rounded-sm inline-flex items-center gap-2 no-underline shadow-[0_0_20px_rgba(255,106,0,0.4)]"> 
+            QUERO DESTRAVAR MINHA POTÊNCIA <i data-lucide="zap" style="width:24px;height:24px;"></i> 
+         </a>
+         <p class="text-brand font-condensed tracking-widest mt-4 font-bold text-lg">EXPLODE. TREINE. EVOLUA. SUPERE.</p>
+     </div>
+    </div>
+   </section>
+   
+   <!-- Problema / Anatomia do Erro -->
+   <section class="py-20 px-4 sm:px-6 bg-black border-t border-white/5">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center mb-14">
+         <span class="font-condensed text-xs tracking-[0.3em] text-brand uppercase">A Anatomia do Erro</span>
+         <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-2">Você está treinando potência ou destruindo suas articulações?</h2>
+     </div>
+     
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+         <div class="bg-card border border-red-500/20 rounded-md p-8 card-hover">
+             <div class="flex items-center gap-3 mb-4">
+                 <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center">
+                     <i data-lucide="x-circle" style="width:24px;height:24px;color:#ef4444;"></i>
+                 </div>
+                 <h3 class="font-display text-2xl font-bold text-white">O Mito do Caixote</h3>
+             </div>
+             <p class="text-muted text-sm leading-relaxed mb-4">
+                 Saltar de uma plataforma e aterrissar com os joelhos estendidos bloqueia a ação do complexo músculotendíneo. Sem a flexão controlada para o amortecimento, a musculatura não dissipa a energia. 
+             </p>
+             <p class="text-red-400 text-sm font-bold">
+                 Resultado: Sobrecarga transferida diretamente para cartilagens, ligamentos e coluna. O tempo de contato longo dissipa a energia elástica.
+             </p>
+         </div>
+         
+         <div class="bg-card border border-brand/30 rounded-md p-8 card-hover shadow-[0_0_15px_rgba(255,106,0,0.1)]">
+             <div class="flex items-center gap-3 mb-4">
+                 <div class="w-12 h-12 rounded-full bg-brand/10 flex items-center justify-center">
+                     <i data-lucide="check-circle" style="width:24px;height:24px;color:#FF6A00;"></i>
+                 </div>
+                 <h3 class="font-display text-2xl font-bold text-white">O Verdadeiro CEE</h3>
+             </div>
+             <p class="text-muted text-sm leading-relaxed mb-4">
+                 O Ciclo de Estiramento-Encurtamento (CEE) otimizado exige contato mínimo com o solo. A fase de amortização ultrarrápida impede que a energia elástica vire calor, somando-a à ativação muscular.
+             </p>
+             <p class="text-brand text-sm font-bold">
+                 Resultado: Aumento de até 817% na produção de potência em Watts com menor custo energético e proteção articular.
+             </p>
+         </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- O que vai aprender -->
+   <section class="py-20 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto">
+     <div class="mb-12 text-center">
+         <span class="font-condensed text-xs tracking-[0.3em] text-brand uppercase">Conteúdo do E-book</span>
+         <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-2">O Que Você Encontrará Neste Livro</h2>
+     </div>
+     
+     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+       <!-- Card 1 -->
+       <div class="bg-card border border-white/5 rounded-lg p-6 card-hover">
+         <div class="w-14 h-14 rounded-lg bg-brand/10 flex items-center justify-center mb-5">
+            <i data-lucide="brain" style="width:28px;height:28px;color:#FF6A00;"></i>
+         </div>
+         <h3 class="font-display text-xl font-bold text-white mb-3">Bases Neurofisiológicas</h3>
+         <p class="text-muted text-sm leading-relaxed">Ação dos fusos musculares, controle do Órgão Tendinoso de Golgi (OTG) e a ciência do reflexo miotático.</p>
+       </div>
+       <!-- Card 2 -->
+       <div class="bg-card border border-white/5 rounded-lg p-6 card-hover">
+         <div class="w-14 h-14 rounded-lg bg-brand/10 flex items-center justify-center mb-5">
+            <i data-lucide="timer" style="width:28px;height:28px;color:#FF6A00;"></i>
+         </div>
+         <h3 class="font-display text-xl font-bold text-white mb-3">Mecânica dos Saltos</h3>
+         <p class="text-muted text-sm leading-relaxed">Análise exata do tempo de contato com o solo (TCS) e o domínio da rigidez articular (stiffness).</p>
+       </div>
+       <!-- Card 3 -->
+       <div class="bg-card border border-white/5 rounded-lg p-6 card-hover">
+         <div class="w-14 h-14 rounded-lg bg-brand/10 flex items-center justify-center mb-5">
+            <i data-lucide="bar-chart-2" style="width:28px;height:28px;color:#FF6A00;"></i>
+         </div>
+         <h3 class="font-display text-xl font-bold text-white mb-3">Progressão Pedagógica</h3>
+         <p class="text-muted text-sm leading-relaxed">Estratégias seguras de aplicação, divididas em 5 níveis práticos baseados na Impulsão Máxima Vertical (IMV).</p>
+       </div>
+       <!-- Card 4 -->
+       <div class="bg-card border border-white/5 rounded-lg p-6 card-hover">
+         <div class="w-14 h-14 rounded-lg bg-brand/10 flex items-center justify-center mb-5">
+            <i data-lucide="activity" style="width:28px;height:28px;color:#FF6A00;"></i>
+         </div>
+         <h3 class="font-display text-xl font-bold text-white mb-3">Fronteira Bioenergética</h3>
+         <p class="text-muted text-sm leading-relaxed">O sistema ATP-CP e o perigo da transição glicolítica: por que a potência colapsa para 1/3 e gera risco de lesão.</p>
+       </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- Autor -->
+   <section class="py-20 px-4 sm:px-6 bg-black border-y border-white/5">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-1">
+            <span class="font-condensed text-xs tracking-[0.3em] text-brand uppercase">Sobre o Autor</span>
+            <h2 class="font-display text-3xl font-bold text-white mt-2 mb-2">Prof. Marco Angelo Barbosa dos Anjos, MSc.</h2>
+            <p class="font-condensed text-brand tracking-wider mb-6">CREF1: 5903/G</p>
+            <p class="text-muted text-base leading-relaxed mb-4">
+                Mestre em Ciência da Motricidade Humana e especialista em Biomecânica e Performance. Com mais de 25 anos de atuação técnica e científica no esporte de alto rendimento.
+            </p>
+            <p class="text-muted text-base leading-relaxed">
+                Atua como treinador de triathlon e consultor em biomecânica, dedicando sua trajetória ao desenvolvimento de soluções aplicadas à mecânica do movimento, unindo a fisiologia celular à aplicação prática no desempenho humano.
+            </p>
+        </div>
+    </div>
+   </section>
+
+   <!-- Checkout CTA -->
+   <section id="checkout" class="py-24 px-4 sm:px-6 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-t from-brand/10 to-transparent"></div>
+    <div class="relative z-10 max-w-3xl mx-auto text-center bg-card border border-brand/30 rounded-xl p-10 shadow-[0_0_30px_rgba(255,106,0,0.15)]">
+        <h2 class="font-display text-4xl font-bold text-white mb-4">Pronto para transformar sua metodologia?</h2>
+        <p class="text-muted text-lg mb-8">Acesso imediato ao manual prático definitivo que une a profundidade científica às exigências reais da pista.</p>
+        <div class="text-4xl font-display font-bold text-brand mb-8">
+            <span class="text-lg text-muted line-through mr-2">R$ 97,00</span> R$ 47,00
+        </div>
+        <a href="LINK_KIWIFY_AQUI" class="btn-cta bg-brand hover:bg-brandDark text-white font-display text-xl tracking-wider px-12 py-5 rounded-sm inline-block w-full sm:w-auto shadow-[0_0_20px_rgba(255,106,0,0.4)]">
+            COMPRAR AGORA - ACESSO IMEDIATO
+        </a>
+        <p class="text-xs text-muted mt-4 font-condensed tracking-wider">Pagamento 100% seguro via Kiwify.</p>
+    </div>
+   </section>
+   
+   <footer class="py-8 text-center border-t border-white/5 bg-black">
+       <p class="text-muted text-xs font-condensed tracking-wider">© 2026 ANGESPORTE — Biomechanics & Performance Analysis.</p>
+   </footer>
+
+  </div>
+  <script>lucide.createIcons();</script>
+ </body>
+</html>
