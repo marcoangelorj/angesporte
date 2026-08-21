@@ -200,9 +200,23 @@
        <a href="#contato" class="hover:text-brand transition-colors">CONTATO</a> 
        <a href="https://angesportenetwork.blogspot.com" target="_blank" rel="noopener noreferrer" class="hover:text-brand transition-colors flex items-center gap-1">BLOG <i data-lucide="external-link" style="width:12px;height:12px;"></i></a>
        
-       <a href="https://app.angesporte.com.br" target="_blank" rel="noopener noreferrer" class="bg-brand/10 border border-brand/50 text-brand hover:bg-brand hover:text-white transition-all px-4 py-1.5 rounded-sm flex items-center gap-2 ml-2 shadow-[0_0_10px_rgba(255,106,0,0.2)]">
-         <i data-lucide="activity" style="width:14px;height:14px;"></i> SISTEMA
-       </a>
+       <!-- INÍCIO DO MENU DROPDOWN TAILWIND (DESKTOP) -->
+       <div class="relative group ml-2">
+         <button class="bg-brand/10 border border-brand/50 text-brand group-hover:bg-brand group-hover:text-white transition-all px-4 py-1.5 rounded-sm flex items-center gap-2 shadow-[0_0_10px_rgba(255,106,0,0.2)] cursor-pointer font-condensed tracking-wider">
+           <i data-lucide="activity" style="width:14px;height:14px;"></i> SISTEMAS <i data-lucide="chevron-down" style="width:14px;height:14px;"></i>
+         </button>
+         
+         <div class="absolute right-0 mt-2 w-56 bg-card border border-white/10 rounded-md shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 flex flex-col overflow-hidden">
+           <a href="https://app.angesporte.com.br" target="_blank" rel="noopener noreferrer" class="px-4 py-3 text-sm text-txt hover:bg-brand/10 hover:text-brand border-b border-white/5 transition-colors flex items-center gap-2 font-condensed tracking-wider">
+             <i data-lucide="activity" style="width:14px;height:14px;"></i> ANÁLISE DE CORRIDA
+           </a>
+           <a href="https://glicemia.angesporte.com.br" target="_blank" rel="noopener noreferrer" class="px-4 py-3 text-sm text-txt hover:bg-brand/10 hover:text-brand transition-colors flex items-center gap-2 font-condensed tracking-wider">
+             <i data-lucide="bar-chart-2" style="width:14px;height:14px;"></i> CONTROLE GLICÊMICO
+           </a>
+         </div>
+       </div>
+       <!-- FIM DO MENU DROPDOWN TAILWIND (DESKTOP) -->
+       
      </div>
      <button id="mobile-menu-btn" class="md:hidden text-white" aria-label="Menu"> <i data-lucide="menu" style="width:24px;height:24px;"></i> </button>
     </div>
@@ -214,10 +228,19 @@
       <a href="#contato" class="block py-2 text-muted hover:text-brand transition-colors">CONTATO</a> 
       <a href="https://angesportenetwork.blogspot.com" target="_blank" rel="noopener noreferrer" class="block py-2 text-muted hover:text-brand transition-colors">BLOG</a>
       
+      <!-- INÍCIO SISTEMAS MOBILE -->
       <div class="my-3 border-t border-white/10"></div>
-      <a href="https://app.angesporte.com.br" target="_blank" rel="noopener noreferrer" class="block py-3 text-brand hover:text-brandDark transition-colors flex items-center gap-2 font-bold">
-        <i data-lucide="activity" style="width:16px;height:16px;"></i> ACESSAR SISTEMA
+      <div class="block py-2 text-muted font-condensed tracking-widest text-xs uppercase mb-1">Meus Sistemas</div>
+      
+      <a href="https://app.angesporte.com.br" target="_blank" rel="noopener noreferrer" class="block py-2 pl-2 text-brand hover:text-brandDark transition-colors flex items-center gap-2 font-bold">
+        <i data-lucide="activity" style="width:16px;height:16px;"></i> Análise de Corrida
       </a>
+      
+      <a href="https://glicemia.angesporte.com.br" target="_blank" rel="noopener noreferrer" class="block py-2 pl-2 text-brand hover:text-brandDark transition-colors flex items-center gap-2 font-bold">
+        <i data-lucide="bar-chart-2" style="width:16px;height:16px;"></i> Controle Glicêmico (UFRJ)
+      </a>
+      <!-- FIM SISTEMAS MOBILE -->
+      
     </div>
    </nav>
 
