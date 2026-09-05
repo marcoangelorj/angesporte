@@ -206,10 +206,19 @@
            <i data-lucide="activity" style="width:14px;height:14px;"></i> SISTEMAS <i data-lucide="chevron-down" style="width:14px;height:14px;"></i>
          </button>
          
-         <div class="absolute right-0 mt-2 w-56 bg-card border border-white/10 rounded-md shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 flex flex-col overflow-hidden">
+         <div class="absolute right-0 mt-2 w-64 bg-card border border-white/10 rounded-md shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 flex flex-col overflow-hidden">
+           
+           <!-- NOVO: BOTÃO AERO LAB PRO (RESTRITO COM SENHA) -->
+           <button onclick="solicitarSenha('https://maadvanced-bike-cda-analyzer.onrender.com')" class="w-full text-left px-4 py-3 text-sm text-txt hover:bg-brand/10 hover:text-brand border-b border-white/5 transition-colors flex items-center gap-2 font-condensed tracking-wider cursor-pointer">
+             <i data-lucide="shield-alert" style="width:14px;height:14px;color:#FF6A00;"></i> AERO LAB PRO (RESTRITO)
+           </button>
+           
+           <!-- PRESERVADO: ANÁLISE DE CORRIDA -->
            <a href="https://app.angesporte.com.br" target="_blank" rel="noopener noreferrer" class="px-4 py-3 text-sm text-txt hover:bg-brand/10 hover:text-brand border-b border-white/5 transition-colors flex items-center gap-2 font-condensed tracking-wider">
              <i data-lucide="activity" style="width:14px;height:14px;"></i> ANÁLISE DE CORRIDA
            </a>
+           
+           <!-- PRESERVADO: CONTROLE GLICÊMICO -->
            <a href="https://glicemia.angesporte.com.br" target="_blank" rel="noopener noreferrer" class="px-4 py-3 text-sm text-txt hover:bg-brand/10 hover:text-brand transition-colors flex items-center gap-2 font-condensed tracking-wider">
              <i data-lucide="bar-chart-2" style="width:14px;height:14px;"></i> CONTROLE GLICÊMICO
            </a>
@@ -232,10 +241,17 @@
       <div class="my-3 border-t border-white/10"></div>
       <div class="block py-2 text-muted font-condensed tracking-widest text-xs uppercase mb-1">Meus Sistemas</div>
       
+      <!-- NOVO: BOTÃO AERO LAB PRO MOBILE (RESTRITO COM SENHA) -->
+      <button onclick="solicitarSenha('https://maadvanced-bike-cda-analyzer.onrender.com')" class="w-full text-left py-2 pl-2 text-brand hover:text-brandDark transition-colors flex items-center gap-2 font-bold bg-transparent border-0 cursor-pointer">
+        <i data-lucide="shield-alert" style="width:16px;height:16px;"></i> Aero Lab Pro (Restrito)
+      </button>
+
+      <!-- PRESERVADO: ANÁLISE DE CORRIDA MOBILE -->
       <a href="https://app.angesporte.com.br" target="_blank" rel="noopener noreferrer" class="block py-2 pl-2 text-brand hover:text-brandDark transition-colors flex items-center gap-2 font-bold">
         <i data-lucide="activity" style="width:16px;height:16px;"></i> Análise de Corrida
       </a>
       
+      <!-- PRESERVADO: CONTROLE GLICÊMICO MOBILE -->
       <a href="https://glicemia.angesporte.com.br" target="_blank" rel="noopener noreferrer" class="block py-2 pl-2 text-brand hover:text-brandDark transition-colors flex items-center gap-2 font-bold">
         <i data-lucide="bar-chart-2" style="width:16px;height:16px;"></i> Controle Glicêmico (UFRJ)
       </a>
@@ -261,7 +277,13 @@
      </div>
      <div class="h-[3px] bg-brand mx-auto mt-6 mb-6 line-grow" style="width:80px;"></div>
      <p id="hero-subtitle" class="text-base sm:text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed hero-anim-delay2">Consultoria e Assessoria Esportiva Personalizada com base em Biomecânica e Fisiologia</p>
-     <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 hero-anim-delay2"><a href="#contato" id="hero-cta" class="btn-cta bg-brand hover:bg-brandDark text-white font-display text-lg tracking-wider px-8 py-4 rounded-sm inline-flex items-center gap-2 no-underline"> Quero Começar Agora <i data-lucide="arrow-right" style="width:20px;height:20px;"></i> </a> <a href="#precos" class="border border-white/20 hover:border-brand text-white font-display text-sm tracking-wider px-6 py-4 rounded-sm inline-flex items-center gap-2 no-underline transition-colors"> <i data-lucide="play-circle" style="width:18px;height:18px;color:#FF6A00;"></i> VER PLANOS </a>
+     <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 hero-anim-delay2">
+       <a href="#contato" id="hero-cta" class="btn-cta bg-brand hover:bg-brandDark text-white font-display text-lg tracking-wider px-8 py-4 rounded-sm inline-flex items-center gap-2 no-underline"> Quero Começar Agora <i data-lucide="arrow-right" style="width:20px;height:20px;"></i> </a> 
+       
+       <!-- BOTÃO OPCIONAL NO HERO PARA ACESSO RÁPIDO AO AERO LAB -->
+       <button onclick="solicitarSenha('https://maadvanced-bike-cda-analyzer.onrender.com')" class="border border-brand/50 bg-brand/10 hover:bg-brand text-white font-display text-sm tracking-wider px-6 py-4 rounded-sm inline-flex items-center gap-2 transition-colors cursor-pointer"> 
+         <i data-lucide="shield-alert" style="width:18px;height:18px;color:#FF6A00;"></i> ACESSAR AERO LAB PRO 
+       </button>
      </div>
      
      <div class="mt-14 grid grid-cols-3 gap-4 max-w-md mx-auto">
@@ -708,7 +730,7 @@
           Instagram
         </div>
         <div class="text-muted text-xs">
-          @angesporte
+          @Pro @angesporte
         </div>
        </div></a>
      </div>
@@ -721,9 +743,58 @@
      </div>
     </div>
    </footer>
+
+   <!-- MODAL DE SENHA OCULTA -->
+   <div id="modal-senha" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 hidden flex items-center justify-center px-4">
+    <div class="bg-card border border-brand/30 rounded-lg p-8 max-w-md w-full shadow-2xl relative text-center">
+      <div class="w-12 h-12 bg-brand/10 rounded-full flex items-center justify-center mx-auto mb-4 border border-brand/20">
+        <i data-lucide="lock" style="width:24px;height:24px;color:#FF6A00;"></i>
+      </div>
+      <h3 class="font-display text-2xl font-bold text-white mb-2">Área Restrita</h3>
+      <p class="text-muted text-sm mb-6">Digite a senha de acesso autorizada para abrir o sistema de análise biomecânica.</p>
+      
+      <form onsubmit="validarSenha(event)" class="space-y-4">
+        <input type="password" id="senha-input" placeholder="Digite a senha..." required class="w-full bg-surface border border-white/10 rounded px-4 py-3 text-white text-center focus:outline-none focus:border-brand tracking-widest text-lg">
+        <div id="erro-senha" class="text-red-500 text-xs hidden">Senha incorreta. Tente novamente.</div>
+        <div class="flex gap-3 pt-2">
+          <button type="button" onclick="fecharModalSenha()" class="w-1/2 bg-white/5 hover:bg-white/10 text-muted font-condensed py-3 rounded tracking-wider text-xs uppercase transition-colors cursor-pointer">Cancelar</button>
+          <button type="submit" class="w-1/2 bg-brand hover:bg-brandDark text-white font-condensed font-bold py-3 rounded tracking-wider text-xs uppercase transition-colors cursor-pointer">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   </div>
   
   <script>
+  let urlDestino = '';
+
+  function solicitarSenha(url) {
+    urlDestino = url;
+    document.getElementById('modal-senha').classList.remove('hidden');
+    document.getElementById('senha-input').value = '';
+    document.getElementById('erro-senha').classList.add('hidden');
+    setTimeout(() => document.getElementById('senha-input').focus(), 100);
+  }
+
+  function fecharModalSenha() {
+    document.getElementById('modal-senha').classList.add('hidden');
+  }
+
+  function validarSenha(event) {
+    event.preventDefault();
+    const senhaDigitada = document.getElementById('senha-input').value;
+    const senhaMestre = "ang2026"; // ALtere esta senha para a senha mestre que desejar
+    
+    if (senhaDigitada === senhaMestre) {
+      fecharModalSenha();
+      window.open(urlDestino, '_blank');
+    } else {
+      document.getElementById('erro-senha').classList.remove('hidden');
+      document.getElementById('senha-input').value = '';
+    }
+  }
+
   const defaultConfig = {
     hero_title: 'Elevando Seu Desempenho no Ciclismo, Triathlon e Corrida',
     hero_subtitle: 'Consultoria e Assessoria Esportiva Personalizada com base em Biomecânica e Fisiologia',
